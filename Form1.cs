@@ -16,5 +16,11 @@ namespace tesut02
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // 自分自身のフォームを最大化する
+            this.WindowState = FormWindowState.Maximized;
+        }
     }
 }
