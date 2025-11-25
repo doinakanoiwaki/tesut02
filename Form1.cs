@@ -32,8 +32,8 @@ namespace tesut02
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3(); // Form2 のインスタンスを作成
-            form3.Show();              // Form2 を表示
+            Form3 form3 = new Form3(); // Form3 のインスタンスを作成
+            form3.Show();              // Form3 を表示
             this.Hide();
         }
 
