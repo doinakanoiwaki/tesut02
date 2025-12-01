@@ -41,7 +41,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("HGS創英角ｺﾞｼｯｸUB", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1.Location = new System.Drawing.Point(196, 354);
+            this.button1.Location = new System.Drawing.Point(205, 354);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(164, 66);
             this.button1.TabIndex = 0;
