@@ -104,7 +104,7 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("ＭＳ Ｐゴシック", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label1.Font = new System.Drawing.Font("ＭＳ Ｐゴシック", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label1.Location = new System.Drawing.Point(51, 59);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(381, 269);
