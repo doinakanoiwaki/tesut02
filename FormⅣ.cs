@@ -25,6 +25,11 @@ namespace tesut02
 
         }
 
+        public FormⅣ()
+        {
+            InitializeComponent();
+        }
+
         private void FormⅣ_Load(object sender, EventArgs e)
         {
             // フォームを最大化して表示
@@ -32,11 +37,13 @@ namespace tesut02
 
             // Chartの初期化
             chart1.Series.Clear();
-            // 既存の系列をクリア
-            Series series = new Series("データ");
+  
             // 新しい系列を作成
-            series.ChartType = SeriesChartType.Column;
-            // グラフの種類を「棒グラフ」に設定
+            Series series = new Series("データ")
+            {
+                ChartType = SeriesChartType.Column
+            };
+
 
             // ラジオボタンの選択に応じてデータを変える
             switch (selectedOption)
@@ -70,33 +77,5 @@ namespace tesut02
 
         }
     }
-    /*
-     * using System;
-using System.Windows.Forms;
 
-namespace tesut02
-{
-    public partial class Form3 : Form
-    {
-        public Form3()
-        {
-            InitializeComponent();
-        }
-
-        private void buttonShowGraph_Click(object sender, EventArgs e)
-        {
-            string selectedOption = "";
-
-            if (radioButton1.Checked) selectedOption = "Option1";
-            else if (radioButton2.Checked) selectedOption = "Option2";
-            else if (radioButton3.Checked) selectedOption = "Option3";
-
-            // FormⅣに選択値を渡して表示
-            FormⅣ form4 = new FormⅣ(selectedOption);
-            form4.Show();
-        }
-    }
-}
-
-     */
 }
