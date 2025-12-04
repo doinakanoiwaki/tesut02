@@ -16,5 +16,12 @@ namespace tesut02
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3(); // Form3 のインスタンスを作成
+            form3.Show();              // Form3 を表示
+            this.Hide();
+        }
     }
 }
