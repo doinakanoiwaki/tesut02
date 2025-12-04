@@ -58,7 +58,7 @@
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button1.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1.Location = new System.Drawing.Point(800, 437);
+            this.button1.Location = new System.Drawing.Point(800, 375);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 52);
@@ -73,7 +73,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("UD デジタル 教科書体 NK", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label2.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label2.Location = new System.Drawing.Point(447, 443);
+            this.label2.Location = new System.Drawing.Point(449, 375);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(236, 46);
             this.label2.TabIndex = 2;
@@ -98,7 +98,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("UD デジタル 教科書体 NK", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label3.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.label3.Location = new System.Drawing.Point(447, 536);
+            this.label3.Location = new System.Drawing.Point(449, 530);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(238, 46);
             this.label3.TabIndex = 5;
