@@ -43,5 +43,12 @@ namespace tesut02
             button1.Location = new Point(50, 100);
             Application.Exit();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form5 form5 = new Form5(); // Form3 のインスタンスを作成
+            form5.Show();              // Form3 を表示
+            this.Hide();
+        }
     }
 }
