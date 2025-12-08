@@ -46,6 +46,8 @@ namespace tesut02
             if (radioButton1.Checked) selectedOption = "Option1";
             else if (radioButton2.Checked) selectedOption = "Option2";
             else if (radioButton3.Checked) selectedOption = "Option3";
+            else if (radioButton4.Checked) selectedOption = "Option4";
+            else if (radioButton5.Checked) selectedOption = "Option5";
 
             // FormⅣに選択値を渡して表示
             FormⅣ FormⅣ = new FormⅣ(selectedOption);
