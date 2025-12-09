@@ -23,5 +23,12 @@ namespace tesut02
             form3.Show();              // Form3 を表示
             this.Hide();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Form5 form5 = new Form5(); // Form3 のインスタンスを作成
+            form5.Show();              // Form3 を表示
+            this.Hide();
+        }
     }
 }

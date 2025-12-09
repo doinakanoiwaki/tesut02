@@ -30,5 +30,10 @@ namespace tesut02
             form2.Show();              // Form3 を表示
             this.Hide();
         }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
