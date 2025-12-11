@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 
@@ -26,6 +27,8 @@ namespace tesut02
             // フォームを最大化して表示
             this.WindowState = FormWindowState.Maximized;
 
+            int sum = 0;
+
             chart1.Series.Clear();
             Series series = new Series("データ");
             series.ChartType = SeriesChartType.Column;
@@ -34,23 +37,23 @@ namespace tesut02
             switch (selectedOption)
             {
                 case "Option1":
-                    series.Points.AddXY("A", 10);
+                    series.Points.AddXY("非常に当てはまる", 1);
                     break;
 
                 case "Option2":
-                    series.Points.AddXY("X", 5);
+                    series.Points.AddXY("当てはまる", 1);
                     break;
 
                 case "Option3":
-                    series.Points.AddXY("P", 12);
+                    series.Points.AddXY("どちらでもない", 1);
                     break;
 
                 case "Option4":
-                    series.Points.AddXY("M", 8);
+                    series.Points.AddXY("当てはまらない", 1);
                     break;
 
                 case "Option5":
-                    series.Points.AddXY("U", 20);
+                    series.Points.AddXY("まったく当てはまらない", 1);
                     break;
             }
 
@@ -60,6 +63,27 @@ namespace tesut02
 
         private void chart1_Click(object sender, EventArgs e)
         {
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form5 form5 = new Form5(); // Form2 のインスタンスを作成
+            form5.Show();              // Form2 を表示
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3(); // Form2 のインスタンスを作成
+            form3.Show();              // Form2 を表示
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // 終了ボタンの処理
+            button3.Location = new Point(50, 100);
+            Application.Exit();
         }
     }
 }
