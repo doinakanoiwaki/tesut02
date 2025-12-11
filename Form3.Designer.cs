@@ -41,9 +41,10 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("HGS創英角ｺﾞｼｯｸUB", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1.Location = new System.Drawing.Point(205, 354);
+            this.button1.Location = new System.Drawing.Point(164, 295);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(164, 66);
+            this.button1.Size = new System.Drawing.Size(131, 55);
             this.button1.TabIndex = 0;
             this.button1.Text = "戻る";
             this.button1.UseVisualStyleBackColor = true;
@@ -53,8 +54,11 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(500, 86);
+            this.radioButton1.Location = new System.Drawing.Point(413, 78);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(158, 22);
+            this.radioButton1.Size = new System.Drawing.Size(132, 19);
             this.radioButton1.TabIndex = 1;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "非常に当てはまる";
@@ -63,9 +67,10 @@
             // radioButton2
             // 
             this.radioButton2.Font = new System.Drawing.Font("ＭＳ Ｐゴシック", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.radioButton2.Location = new System.Drawing.Point(439, 114);
+            this.radioButton2.Location = new System.Drawing.Point(351, 95);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(340, 49);
+            this.radioButton2.Size = new System.Drawing.Size(272, 41);
             this.radioButton2.TabIndex = 2;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "当てはまる";
@@ -74,9 +79,10 @@
             // radioButton3
             // 
             this.radioButton3.Font = new System.Drawing.Font("ＭＳ Ｐゴシック", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.radioButton3.Location = new System.Drawing.Point(439, 169);
+            this.radioButton3.Location = new System.Drawing.Point(351, 141);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(340, 49);
+            this.radioButton3.Size = new System.Drawing.Size(272, 41);
             this.radioButton3.TabIndex = 3;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "どちらともいえない";
@@ -85,9 +91,10 @@
             // radioButton4
             // 
             this.radioButton4.Font = new System.Drawing.Font("ＭＳ Ｐゴシック", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.radioButton4.Location = new System.Drawing.Point(439, 224);
+            this.radioButton4.Location = new System.Drawing.Point(351, 187);
+            this.radioButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(340, 49);
+            this.radioButton4.Size = new System.Drawing.Size(272, 41);
             this.radioButton4.TabIndex = 4;
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "あまり当てはまらない";
@@ -96,9 +103,10 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("HGS創英角ｺﾞｼｯｸUB", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button2.Location = new System.Drawing.Point(439, 354);
+            this.button2.Location = new System.Drawing.Point(351, 295);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(155, 66);
+            this.button2.Size = new System.Drawing.Size(124, 55);
             this.button2.TabIndex = 5;
             this.button2.Text = "回答";
             this.button2.UseVisualStyleBackColor = true;
@@ -107,9 +115,10 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("ＭＳ Ｐゴシック", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label1.Location = new System.Drawing.Point(28, 59);
+            this.label1.Location = new System.Drawing.Point(22, 49);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(381, 269);
+            this.label1.Size = new System.Drawing.Size(305, 224);
             this.label1.TabIndex = 6;
             this.label1.Text = "問題文";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -117,9 +126,10 @@
             // radioButton5
             // 
             this.radioButton5.Font = new System.Drawing.Font("ＭＳ Ｐゴシック", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.radioButton5.Location = new System.Drawing.Point(439, 279);
+            this.radioButton5.Location = new System.Drawing.Point(351, 232);
+            this.radioButton5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(340, 49);
+            this.radioButton5.Size = new System.Drawing.Size(272, 41);
             this.radioButton5.TabIndex = 7;
             this.radioButton5.TabStop = true;
             this.radioButton5.Text = "全く当てはまらない";
@@ -127,9 +137,9 @@
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(811, 456);
+            this.ClientSize = new System.Drawing.Size(649, 380);
             this.Controls.Add(this.radioButton5);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
@@ -138,6 +148,7 @@
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form3";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);

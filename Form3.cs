@@ -142,6 +142,15 @@ namespace tesut02
 
         
 
+            // FormⅣに選択値を渡して表示
+            FormⅣ FormⅣ = new FormⅣ(selectedOption);
+            FormⅣ.Show();
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
