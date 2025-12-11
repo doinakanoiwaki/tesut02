@@ -103,18 +103,8 @@ namespace tesut02
 
         private void button2_Click(object sender, EventArgs e)
         {
-            // ここでも必ず選択肢を渡す
-            string selectedOption = "";
-
-            if (radioButton1.Checked) selectedOption = "Option1";
-            else if (radioButton2.Checked) selectedOption = "Option2";
-            else if (radioButton3.Checked) selectedOption = "Option3";
 
 
-            FormⅣ formⅣ = new FormⅣ(); // Form3 のインスタンスを作成
-            formⅣ.Show();              // Form3 を表示
-            this.Hide();
-            
 
             if (i == 0)
             {
@@ -128,7 +118,7 @@ namespace tesut02
             {
                 label1.Text = "（ここに3つ目の質問を追加できます）";
             }
-            
+
 
             else if (i == 10)  // 最後の質問が終わったら FormⅣ を開く
             {
@@ -140,10 +130,6 @@ namespace tesut02
 
             i++;
 
-
-
-
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -153,20 +139,7 @@ namespace tesut02
             this.Hide();
         }
 
+        
 
-        private void buttonShowGraph_Click(object sender, EventArgs e)
-        {
-            string selectedOption = "";
-
-            if (radioButton1.Checked) selectedOption = "Option1";
-            else if (radioButton2.Checked) selectedOption = "Option2";
-            else if (radioButton3.Checked) selectedOption = "Option3";
-            else if (radioButton4.Checked) selectedOption = "Option4";
-            else if (radioButton5.Checked) selectedOption = "Option5";
-
-            // FormⅣに選択値を渡して表示
-            FormⅣ FormⅣ = new FormⅣ(selectedOption);
-            FormⅣ.Show();
-        }
     }
-}
+}
