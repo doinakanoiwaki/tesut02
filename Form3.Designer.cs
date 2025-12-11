@@ -53,9 +53,11 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(500, 86);
             this.radioButton1.Location = new System.Drawing.Point(413, 78);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(158, 22);
             this.radioButton1.Size = new System.Drawing.Size(132, 19);
             this.radioButton1.TabIndex = 1;
             this.radioButton1.TabStop = true;
