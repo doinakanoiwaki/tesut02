@@ -53,5 +53,10 @@ namespace tesut02
             FormⅣ FormⅣ = new FormⅣ(selectedOption);
             FormⅣ.Show();
         }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
