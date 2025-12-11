@@ -90,6 +90,7 @@ namespace tesut02
             "",
 
         };
+        private string selectedOption;
 
         public Form3()
         {
@@ -102,7 +103,7 @@ namespace tesut02
         }
 
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
 
 
@@ -140,17 +141,15 @@ namespace tesut02
             this.Hide();
         }
 
-        
 
+        private void button2_Click(object sender, EventArgs e)
+        {
             // FormⅣに選択値を渡して表示
             FormⅣ FormⅣ = new FormⅣ(selectedOption);
             FormⅣ.Show();
         }
 
-        private void Form3_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
 
