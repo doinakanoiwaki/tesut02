@@ -18,10 +18,8 @@ namespace tesut02
 
         Random rnd = new Random();
 
-        
-
-
-       
+        // ★回答を保存するリスト（1〜5）
+        public List<int> answers = new List<int>();
 
         public Form3()
         {
@@ -33,16 +31,42 @@ namespace tesut02
             label1.Text = "主食（ご飯やパン）だけで食事を終えることが多いですか？それとも、毎回おかず（肉・   魚・卵・豆腐など）も一緒に食べていますか？";
         }
 
+        // ★ラジオボタンの選択値を取得する関数
+        private int GetSelectedAnswer()
+        {
+            if (radioButton1.Checked) return 1;
+            if (radioButton2.Checked) return 2;
+            if (radioButton3.Checked) return 3;
+            if (radioButton4.Checked) return 4;
+            if (radioButton5.Checked) return 5;
+            return 0; // 未選択
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {
+
+            // ★回答を保存
+            int answer = GetSelectedAnswer();
+            if (answer == 0)
+            {
+                MessageBox.Show("回答を選んでください");
+                return;
+            }
+            answers.Add(answer);
+
+            // ★ラジオボタンをリセット
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+            radioButton3.Checked = false;
+            radioButton4.Checked = false;
+            radioButton5.Checked = false;
 
             int x = rnd.Next(5);
             // 0〜9 のランダムな整数が入る
 
             if (i == 0)
             {
-                switch(x)
+                switch (x)
                 {
                     case 0:
                         label1.Text = "最近、筋肉量の減少・疲れやすさ・肌や髪のハリの低下などを感じることはありますか？";
@@ -76,7 +100,7 @@ namespace tesut02
                         break;
                 }
 
-            }    
+            }
             else if (i == 2)
             {
                 switch (x)
@@ -262,10 +286,10 @@ namespace tesut02
                 }
             }
 
-
-            else if (i == 10)  // 最後の質問が終わったら FormⅣ を開く
+            else if (i == 10)
             {
-                FormⅣ f = new FormⅣ();
+                // ★回答リストを FormⅣ に渡す
+                FormⅣ f = new FormⅣ(answers);
                 f.Show();
                 this.Hide();
                 return;
@@ -281,12 +305,7 @@ namespace tesut02
             form2.Show();              // Form3 を表示
             this.Hide();
         }
-
-        
-
-
-
-
     }
 }
+
 

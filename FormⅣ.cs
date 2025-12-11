@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
@@ -8,56 +9,55 @@ namespace tesut02
     // グラフを表示するフォーム
     public partial class FormⅣ : Form
     {
-        private string selectedOption; // Form3から受け取る値
+        // ★Form3 から受け取る回答リスト
+        private List<int> answers;  
 
-        public FormⅣ(string option)
+
+        public List<int> Answers { get; }
+
+        public FormⅣ(List<int> answers)
         {
             InitializeComponent();
-            selectedOption = option;
+            this.answers = answers;
         }
 
         public FormⅣ()
         {
             InitializeComponent();
-            selectedOption = "Option1"; // デフォルト値を設定（必要なら）
         }
+
 
         private void FormⅣ_Load(object sender, EventArgs e)
         {
-            // フォームを最大化して表示
+            // フォーム最大化
             this.WindowState = FormWindowState.Maximized;
 
-            int sum = 0;
-
+            // グラフ初期化
             chart1.Series.Clear();
-            Series series = new Series("データ");
+            Series series = new Series("回答集計");
             series.ChartType = SeriesChartType.Column;
 
-            // ラジオボタン選択に応じてデータ切り替え
-            switch (selectedOption)
+            // ★回答1〜5の集計
+            int[] count = new int[5];
+            foreach (int a in answers)
             {
-                case "Option1":
-                    series.Points.AddXY("非常に当てはまる", 1);
-                    break;
-
-                case "Option2":
-                    series.Points.AddXY("当てはまる", 1);
-                    break;
-
-                case "Option3":
-                    series.Points.AddXY("どちらでもない", 1);
-                    break;
-
-                case "Option4":
-                    series.Points.AddXY("当てはまらない", 1);
-                    break;
-
-                case "Option5":
-                    series.Points.AddXY("まったく当てはまらない", 1);
-                    break;
+                if (a >= 1 && a <= 5)
+                    count[a - 1]++;
             }
 
+            // ★グラフに反映
+            series.Points.AddXY("非常に当てはまる(1)", count[0]);
+            series.Points.AddXY("当てはまる(2)", count[1]);
+            series.Points.AddXY("どちらでもない(3)", count[2]);
+            series.Points.AddXY("当てはまらない(4)", count[3]);
+            series.Points.AddXY("まったく当てはまらない(5)", count[4]);
+
             chart1.Series.Add(series);
+
+            // 見やすいようにフォント調整
+            chart1.ChartAreas[0].AxisX.LabelStyle.Font = new Font("Meiryo", 12);
+            chart1.ChartAreas[0].AxisY.LabelStyle.Font = new Font("Meiryo", 12);
+
 
         }
 
