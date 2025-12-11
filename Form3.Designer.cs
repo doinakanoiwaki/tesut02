@@ -52,9 +52,9 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(516, 94);
+            this.radioButton1.Location = new System.Drawing.Point(500, 86);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(340, 49);
+            this.radioButton1.Size = new System.Drawing.Size(158, 22);
             this.radioButton1.TabIndex = 1;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "非常に当てはまる";
@@ -142,6 +142,7 @@
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
