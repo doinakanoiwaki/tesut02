@@ -27,7 +27,9 @@ namespace tesut02
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            FormⅣ FormⅣ = new FormⅣ(); // Form2 のインスタンスを作成
+            FormⅣ.Show();              // Form2 を表示
+            this.Hide();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
