@@ -81,6 +81,12 @@ namespace tesut02
             button2.Text = "編集";
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
+            this.Close();   // 今のフォームを閉じる
+        }
 
     }
 }
