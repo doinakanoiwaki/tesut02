@@ -81,7 +81,7 @@ namespace tesut02
 
             // 注意書き
             Label note = new Label();
-            note.Text = "※このアプリは自己申告の症状から栄養素不足を推定しています。";
+            note.Text = "※このアプリはあくまで指標なので重く受け止めないでください。";
             note.Font = new Font("Yu Gothic UI", 12);
             note.ForeColor = Color.DarkRed;
             note.BackColor = Color.Transparent;

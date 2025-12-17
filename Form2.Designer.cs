@@ -40,7 +40,8 @@
             // monthCalendar1
             // 
             this.monthCalendar1.Font = new System.Drawing.Font("HG創英角ｺﾞｼｯｸUB", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.monthCalendar1.Location = new System.Drawing.Point(121, 112);
+            this.monthCalendar1.Location = new System.Drawing.Point(97, 93);
+            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 0;
             // 
@@ -49,9 +50,10 @@
             this.button1.BackColor = System.Drawing.Color.SteelBlue;
             this.button1.Font = new System.Drawing.Font("HG創英角ｺﾞｼｯｸUB", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.button1.ForeColor = System.Drawing.Color.Gold;
-            this.button1.Location = new System.Drawing.Point(327, 478);
+            this.button1.Location = new System.Drawing.Point(262, 398);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(333, 76);
+            this.button1.Size = new System.Drawing.Size(266, 63);
             this.button1.TabIndex = 1;
             this.button1.Text = "質問を開始する";
             this.button1.UseVisualStyleBackColor = false;
@@ -62,9 +64,10 @@
             this.label1.BackColor = System.Drawing.Color.SteelBlue;
             this.label1.Font = new System.Drawing.Font("HG創英角ｺﾞｼｯｸUB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label1.ForeColor = System.Drawing.Color.Gold;
-            this.label1.Location = new System.Drawing.Point(536, 47);
+            this.label1.Location = new System.Drawing.Point(429, 39);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(347, 374);
+            this.label1.Size = new System.Drawing.Size(278, 312);
             this.label1.TabIndex = 2;
             this.label1.Text = "今日の結果";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -72,17 +75,19 @@
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.SteelBlue;
-            this.label2.Location = new System.Drawing.Point(54, 47);
+            this.label2.Location = new System.Drawing.Point(43, 39);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(431, 374);
+            this.label2.Size = new System.Drawing.Size(345, 312);
             this.label2.TabIndex = 3;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(896, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(717, 10);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(77, 71);
+            this.pictureBox1.Size = new System.Drawing.Size(62, 59);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -90,15 +95,16 @@
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.ClientSize = new System.Drawing.Size(985, 603);
+            this.ClientSize = new System.Drawing.Size(788, 502);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.label2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form2";
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
