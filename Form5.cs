@@ -22,7 +22,8 @@ namespace tesut02
 
         private void Form5_Load(object sender, EventArgs e)
         {
-
+            this.WindowState = FormWindowState.Maximized;
+            this.Text = "健康を知ろう - Nutrient Checker";
         }
 
         private void button1_Click(object sender, EventArgs e)
