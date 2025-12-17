@@ -10,8 +10,9 @@
 
 namespace tesut02.Properties {
     using System;
-    
-    
+    using System.Drawing;
+
+
     /// <summary>
     ///   ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
     /// </summary>
@@ -31,7 +32,9 @@ namespace tesut02.Properties {
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal Resources() {
         }
-        
+
+        public static Image HealthBackground { get; internal set; }
+
         /// <summary>
         ///   このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
         /// </summary>

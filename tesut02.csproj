@@ -123,5 +123,10 @@
   <ItemGroup>
     <None Include="Resources\#cat #wallpaper #pc.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="HealthBackgroundpng">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

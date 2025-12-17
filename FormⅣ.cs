@@ -32,12 +32,38 @@ namespace tesut02
             // フォーム最大化
             this.WindowState = FormWindowState.Maximized;
 
-            // グラフ初期化
+            // ===== フォーム背景 =====
+            // 背景画像を設定
+            // 背景画像設定
+
+            string bgPath = Application.StartupPath + @"\HealthBackground.png";
+            this.BackgroundImage = Image.FromFile(bgPath);
+            this.BackgroundImageLayout = ImageLayout.Stretch;
+
+            // ===== Chartの基本設定 =====
             chart1.Series.Clear();
+            chart1.BackColor = Color.Transparent;
+
+            ChartArea area = chart1.ChartAreas[0];
+            area.BackColor = Color.Transparent;
+
+            // 軸の色・フォント（柔らかく）
+            area.AxisX.LabelStyle.Font = new Font("Meiryo", 12);
+            area.AxisY.LabelStyle.Font = new Font("Meiryo", 12);
+            area.AxisX.LineColor = Color.Gray;
+            area.AxisY.LineColor = Color.Gray;
+            area.AxisX.MajorGrid.LineColor = Color.FromArgb(200, Color.LightGray);
+            area.AxisY.MajorGrid.LineColor = Color.FromArgb(200, Color.LightGray);
+
+            // ===== シリーズ設定 =====
             Series series = new Series("回答集計");
             series.ChartType = SeriesChartType.Column;
 
-            // ★回答1〜5の集計
+            // バーを少し柔らかい色に
+            series.Color = Color.FromArgb(180, 79, 129, 235);
+            series.BorderWidth = 0;
+
+            // ===== 回答集計 =====
             int[] count = new int[5];
             foreach (int a in answers)
             {
@@ -45,20 +71,18 @@ namespace tesut02
                     count[a - 1]++;
             }
 
-            // ★グラフに反映
-            series.Points.AddXY("非常に当てはまる(1)", count[0]);
-            series.Points.AddXY("当てはまる(2)", count[1]);
-            series.Points.AddXY("どちらでもない(3)", count[2]);
-            series.Points.AddXY("当てはまらない(4)", count[3]);
-            series.Points.AddXY("まったく当てはまらない(5)", count[4]);
+            // ===== グラフに反映 =====
+            series.Points.AddXY("非常に当てはまる", count[0]);
+            series.Points.AddXY("当てはまる", count[1]);
+            series.Points.AddXY("どちらでもない", count[2]);
+            series.Points.AddXY("当てはまらない", count[3]);
+            series.Points.AddXY("まったく当てはまらない", count[4]);
 
             chart1.Series.Add(series);
 
-            // 見やすいようにフォント調整
-            chart1.ChartAreas[0].AxisX.LabelStyle.Font = new Font("Meiryo", 12);
-            chart1.ChartAreas[0].AxisY.LabelStyle.Font = new Font("Meiryo", 12);
-
-
+            // 凡例
+            chart1.Legends[0].BackColor = Color.Transparent;
+            chart1.Legends[0].Font = new Font("Meiryo", 10);
         }
 
         private void chart1_Click(object sender, EventArgs e)
