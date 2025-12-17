@@ -36,7 +36,7 @@ namespace tesut02
         }
 
 
-            private void label1_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
             // 未登録なら注意
             if (string.IsNullOrEmpty(registeredName))
@@ -49,33 +49,35 @@ namespace tesut02
             label1.Text = registeredName;
         }
 
-        
 
-            private void button2_Click(object sender, EventArgs e)
+
+
+        private void button2_Click(object sender, EventArgs e)
         {
             // ---- 編集モードに戻す処理 ----
             if (button2.Text == "編集")
             {
-                textBox1.Enabled = true;
+                textBox1.Visible = true;
+                textBox1.ReadOnly = false;
                 textBox1.BackColor = Color.White;
                 textBox1.BorderStyle = BorderStyle.FixedSingle;
+
                 button2.Text = "登録";
                 return;
             }
 
             // ---- 登録処理 ----
-
-            // 名前を保存
             registeredName = textBox1.Text;
 
-            // TextBox を透明化＆編集不可に
-            textBox1.Enabled = false;
-            textBox1.BackColor = Color.FromArgb(0, 0, 0, 0); // 透明風
-            textBox1.BorderStyle = BorderStyle.None;
+            // ★ 登録した名前をすぐにラベルへ反映！
+            label1.Text = registeredName;
 
-            // ボタンの文字を「編集」に変更
+            // テキストボックスを非表示
+            textBox1.Visible = false;
+
             button2.Text = "編集";
         }
+
 
     }
 }
