@@ -1,4 +1,6 @@
-﻿namespace tesut02
+﻿using System;
+
+namespace tesut02
 {
     partial class Form5
     {
@@ -109,6 +111,16 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
@@ -140,6 +141,14 @@ namespace tesut02
         {
         }
 
+        private void SaveChartImage()
+        {
+            string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "graph.png");
+            chart1.SaveImage(path, ChartImageFormat.Png);
+            MessageBox.Show("グラフを保存しました：" + path);
+        }
+
+
         private void button1_Click(object sender, EventArgs e)
         {
             Form5 form5 = new Form5(); // Form2 のインスタンスを作成
@@ -160,5 +169,7 @@ namespace tesut02
             button3.Location = new Point(50, 100);
             Application.Exit();
         }
+
+      
     }
 }
